@@ -33,14 +33,27 @@ body {
     width: 100%;
     height: 100%;
     top: 100%;
+    overflow: scroll;
     position: absolute;
     transition: .28s all ease-out;
     background: #111;
     opacity: .54;
-    text-align: center;
 }
 
 .book:hover .details, .book:active .details {
     top: 0;
     opacity: .87;
+}
+
+.title {
+    margin: .6875rem 1rem 0;
+    font-size: 1.3125rem;
+    letter-spacing: .05em;
+}
+
+.summary {
+    margin: .1875rem 1rem 0;
+    font-size: .8125rem;
+    line-height: 1.5rem;
+    letter-spacing: .05em;
 }
