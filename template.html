@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>最近在看什麼書</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+{{#books}}
+    <section class="book" style="background-image: url('cover.jpg?{{cover}}');">
+        <div class="details">
+            <h4 class="title">{{title}}</h4>
+            <p class="summary">{{summary}}</p>
+        </div>
+    </section>
+{{/books}}
+</body>
+</html>
