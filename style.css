@@ -20,9 +20,7 @@ body {
 }
 
 .book {
-    padding-top: 120%;
     margin: 1em;
-    height: 0;
     display: block;
     overflow: hidden;
     position: relative;
@@ -31,13 +29,16 @@ body {
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.3);
 }
 
-@media screen and (min-width: 17em) {
+.book::before {
+    display: block;
+    content: '';
+    padding-top: 127.2%;
+}
+
+@media screen and (min-width: 28em) {
     .book {
         float: left;
     }
-
-    .book:first-child { margin-left: 0; }
-    .book:last-child { float: right; margin-right: 0; }
 
     body::after {
         display: block;
@@ -46,21 +47,16 @@ body {
     }
 }
 
-@media screen and (min-width: 17em) and (max-width: 34em) {
+@media screen and (min-width: 28em) and (max-width: 60em) {
     .book {
-        width: calc(50% - 1rem);
+        width: calc(50% - 2em);
     }
 }
 
-@media screen and (min-width: 34em) and (max-width: 66em) {
+@media screen and (min-width: 60em) {
     .book {
-        width: calc(66.66667% - 1rem);
-    }
-}
-
-@media screen and (min-width: 66em) {
-    .book {
-        width: 15rem;
+        width: calc(25% - 2em);
+        max-width: 15em;
     }
 }
 
