@@ -89,10 +89,6 @@ body {
     text-decoration: none;
 }
 
-.title a:hover {
-    text-decoration: underline;
-}
-
 .summary {
     margin: .1875rem 1rem 0;
     font-size: .8125rem;
